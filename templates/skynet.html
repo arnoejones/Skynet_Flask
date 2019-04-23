@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <h1>{{name}}</h1>
+            {{posts.to_html(classes="table table-striped", na_rep="-") | safe}}
+        </div>
+
+    </div>
+</article>
+{% endblock content%}
